@@ -7,12 +7,31 @@ Get lyrics of the song you're listening to on Spotify in your web browser and si
 ## Requirements
 
 - Python 3
-- configparser
-- webbrowser
 - spotipy
 
 :bulb: You will need a Spotify account and get your own `client ID` and `client secret`
 <br>
+<br>
+
+## Usage
+
+### Clone the application
+
+Clone over HTTPS
+```sh
+git clone https://github.com/ZaraTam/spotify-lyrics.git
+```
+
+Clone over SSH
+```sh
+git clone git@github.com:ZaraTam/spotify-lyrics.git
+```
+
+### Install package dependencies
+
+```sh
+pip install -r requirements.txt
+```
 <br>
 
 ## Customisations
