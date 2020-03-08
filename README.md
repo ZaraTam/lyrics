@@ -1,6 +1,6 @@
 # Spotify lyrics
 
-Get lyrics of the song you're listening to on Spotify in your web browser and sing along
+Get lyrics of the song you're listening to on Spotify in your web browser and sing along 🎤
 <br>
 <br>
 
