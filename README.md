@@ -53,4 +53,4 @@ You can show the lyrics in your default web browser, or specify a different web 
 
 ## Licence
 
-This project is licensed under the GNU General Public License v3.0 - see [LICENSE](https://github.com/ZaraTam/spotify-lyrics/blob/master/LICENSE) for details
+This project is licensed under the MIT License - see [LICENSE](https://github.com/ZaraTam/spotify-lyrics/blob/master/LICENSE) for details
