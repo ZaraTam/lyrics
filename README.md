@@ -15,23 +15,32 @@ Get lyrics of the song you're listening to on Spotify in your web browser and si
 
 ## Usage
 
-### Clone the application
+### 1. Clone the application
 
-Clone over HTTPS
+Option 1: Clone over HTTPS
 ```sh
 git clone https://github.com/ZaraTam/spotify-lyrics.git
 ```
 
-Clone over SSH
+Option 2: Clone over SSH
 ```sh
 git clone git@github.com:ZaraTam/spotify-lyrics.git
 ```
+<br>
 
-### Install package dependencies
+### 2. Install package dependencies
 
 ```sh
 pip install -r requirements.txt
 ```
+<br>
+
+### 3. Authenticate Spotify account
+
+1. Authenticate Spotify account in a web browser
+
+2. Paste the URL you were redirected to in the terminal
+<br>
 <br>
 
 ## Customisations
