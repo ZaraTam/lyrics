@@ -54,7 +54,7 @@ pip install -r requirements.txt
 <br>
 <br>
 
-## Browser option
+### Browser option
 
 You can show the lyrics in your default web browser, or specify a different web browser
 <br>
