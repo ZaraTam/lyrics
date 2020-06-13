@@ -19,22 +19,24 @@ token = util.prompt_for_user_token(username, scope, client_id, client_secret, re
 if token:
     sp = spotipy.Spotify(auth=token)
     results = sp.current_user_playing_track()
-    is_playing = results["is_playing"]
 
-    if is_playing:
-        song = results["item"]["name"]
-        artist = results["item"]["artists"][0]["name"]
+    try:
+        is_playing = results["is_playing"]
 
-        genius_url = "https://genius.com/" + artist.replace(" ", "-") + "-" + song.replace(" ", "-") + "-" + "lyrics"
-        musixmatch_url = "https://www.musixmatch.com/lyrics/" + artist.replace(" ", "-") + "/" + song.replace(" ", "-")
+        if is_playing:
+            song = results["item"]["name"]
+            artist = results["item"]["artists"][0]["name"]
 
-        print("Song: " + song)
-        print("Artist: " + artist)
-        print("Genius lyrics URL: " + genius_url)
-        print("Musixmatch lyrics URL: " + musixmatch_url)
+            genius_url = "https://genius.com/" + artist.replace(" ", "-") + "-" + song.replace(" ", "-") + "-" + "lyrics"
+            musixmatch_url = "https://www.musixmatch.com/lyrics/" + artist.replace(" ", "-") + "/" + song.replace(" ", "-")
 
-        webbrowser.get(browser).open_new_tab(genius_url)
-        webbrowser.get(browser).open_new_tab(musixmatch_url)
+            print("Song: " + song)
+            print("Artist: " + artist)
+            print("Genius lyrics URL: " + genius_url)
+            print("Musixmatch lyrics URL: " + musixmatch_url)
 
-    else:
-        print("Not currently playing")
+            webbrowser.get(browser).open_new_tab(genius_url)
+            webbrowser.get(browser).open_new_tab(musixmatch_url)
+
+    except TypeError:
+        print("Try playing music on your Spotify")
