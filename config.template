@@ -1,0 +1,9 @@
+[Authentication]
+username = spotify_username
+scope = user-read-currently-playing
+client_id = client_id
+client_secret = client_secret
+redirect_uri = http://localhost/
+
+[Browser]
+browser = Firefox
